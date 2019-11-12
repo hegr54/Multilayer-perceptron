@@ -143,7 +143,7 @@ of a certain pattern from a set of input predictive variables (discrete and / or
                 // $example off$
 
  #OUTPUT
- [output](Imagen/result.png)
+ ![output](Imagen/result.png)
 #### Authors: 
 #### Titule: Multilayer Perceptron Classifier
 ###### HERNANDEZ GARCIA RIGOBERTO           15212157
