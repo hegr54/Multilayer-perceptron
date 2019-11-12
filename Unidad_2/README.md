@@ -142,7 +142,7 @@ of a certain pattern from a set of input predictive variables (discrete and / or
                 println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")
                 // $example off$
 
- #RESULT
+ #OUTPUT
  [output](Imagen/result.png)
 #### Authors: 
 #### Titule: Multilayer Perceptron Classifier
