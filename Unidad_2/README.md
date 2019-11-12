@@ -14,7 +14,7 @@
 #### definition
 ### What is Multilayer perceptron classifier?
 Multilayer perceptron classifier (MLPC) is a classifier based on the feedforward artificial neural network. MLPC consists of multiple layers of nodes. Each layer is fully connected to the next layer in the network. Nodes in the input layer represent the input data. All other nodes map inputs to outputs by a linear combination of the inputs with the node’s weights w and bias b and applying an activation function.
-![Figure 1: An Example of Multilayer Perceptron Architecture ](https://github.com/hegr54/Multilayer-perceptron/tree/Unidad_2/Unidad_2/Imagen/multilayer.png)
+![Figure 1: An Example of Multilayer Perceptron Architecture ](Imagen/multilayer.png)
 
 #### Layer_Architecture_in_MLPC
 * The input layer consists of neurons that accept the input values. The output from these neurons is same as the input predictors. Nodes in the input layer represent the input data. All other nodes map inputs to outputs by a linear combination of the inputs with the node’s weights w and bias b and applying an activation function. This can be written in matrix form for MLPC with K+1 layers as follows.
