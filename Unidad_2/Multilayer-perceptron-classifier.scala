@@ -1,5 +1,4 @@
-// $example on$
-//Loading required packages and APIs
+//importacion de las Api's necesarias para la implementacion del algoritmo MultilayerPerceptronClassifier
 import org.apache.spark.ml.classification.MultilayerPerceptronClassifier
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 // $example off$
@@ -8,17 +7,11 @@ import org.apache.spark.sql.SparkSession
 /**
  * An example for Multilayer Perceptron Classification.
  */
- ///Creating a Spark session
+ ///creacion del inicio de seccion de spark.
  val spark = SparkSession.builder.appName("MultilayerPerceptronClassifierExample").getOrCreate()
-
-    // $example on$
-    // Load the data stored in LIBSVM format as a DataFrame.
-    //Load the input data in libsvm format.
+//lectura de nuestro dataset en un formato libsvm tambien carga de nuestro dataset
     val data = spark.read.format("libsvm").load("sample_multiclass_classification_data.txt")
-
-    // Split the data into train and test
-    //Preparing the training and testing set
-    //Prepare the train and test set: training => 60%, test => 40% and seed => 1234L
+//creacion de nuestras variable de entrenamiento, con un 60% de entrenamiento y 40% de prueba de nuestros datos juneto con una semilla de profundidad de 1234L.
     val splits = data.randomSplit(Array(0.6, 0.4), seed = 1234L)
     val train = splits(0)
     val test = splits(1)
